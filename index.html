@@ -52,6 +52,23 @@
     filter: none; /* Retorna a imagem do jeito original */
 }
 
+.iframe-container {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   padding-top: 56.25%; /* Proporção de 16:9 para o iframe */
+}
+
+.iframe-container iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+
+
      
       </style>
    </head>
@@ -341,15 +358,17 @@
             </div>
          </section>
          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="meus_projetos">
-            <div class="my-auto">
-               <h2 class="mb-5">Meus Projetos</h2>
-               <h4 class="mb-3">Gestão de Projetos</h4>
-               <p>Com o intuito de organizar minhas atividades pessoais de estudo, criei este dashboard em Power BI com as fases, projeto, descrição de atividades, prazos e status. Dessa forma, posso saber o que está pendente, o que já está finalizado e tudo aquilo que ainda não iniciei.</p>
-               <iframe title="GESTAO_DE_PROJETOS" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
-               <br> <!-- Adiciona uma quebra de linha -->
-               <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
-            </div>
-         </section>
+          <div class="my-auto">
+             <h2 class="mb-5">Meus Projetos</h2>
+             <h3 class="mb-3">Gestão de Projetos</h3>
+             <p>Com o intuito de organizar minhas atividades pessoais de estudo, criei este dashboard em Power BI com as fases, projeto, descrição de atividades, prazos e status. Dessa forma, posso saber o que está pendente, o que já está finalizado e tudo aquilo que ainda não iniciei.</p>
+             <div class="iframe-container">
+                <iframe title="GESTAO_DE_PROJETOS" src="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+             </div>
+             <br> <!-- Adiciona uma quebra de linha -->
+             <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
+          </div>
+       </section>
          <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
               <h2 class="mb-5">Awards &amp; Certifications</h2>
