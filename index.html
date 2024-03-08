@@ -34,42 +34,33 @@
          /* font-weight: bold; */
          letter-spacing: 0.3px;
          }
-
          .icon-container {
-    transition: color 0.3s ease; /* Adiciona transição para a propriedade color */
-}
-
-.icon-container:hover {
-    color: #ba5e3b; /* Cor ao passar o mouse */
-}
-
-.icon-container img {
-    filter: grayscale(100%);
-    transition: filter 0.3s ease; /* Adiciona transição para a propriedade filter */
-}
-
-.icon-container img:hover {
-    filter: none; /* Retorna a imagem do jeito original */
-}
-
-.iframe-container {
-   position: relative;
-   overflow: hidden;
-   width: 100%;
-   padding-top: 56.25%; /* Proporção de 16:9 para o iframe */
-}
-
-.iframe-container iframe {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   border: 0;
-}
-
-
-     
+         transition: color 0.3s ease; /* Adiciona transição para a propriedade color */
+         }
+         .icon-container:hover {
+         color: #ba5e3b; /* Cor ao passar o mouse */
+         }
+         .icon-container img {
+         filter: grayscale(100%);
+         transition: filter 0.3s ease; /* Adiciona transição para a propriedade filter */
+         }
+         .icon-container img:hover {
+         filter: none; /* Retorna a imagem do jeito original */
+         }
+         .iframe-container {
+         position: relative;
+         overflow: hidden;
+         width: 100%;
+         padding-top: 56.25%; /* Proporção de 16:9 para o iframe */
+         }
+         .iframe-container iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         border: 0;
+         }
       </style>
    </head>
    <body id="page-top">
@@ -89,16 +80,16 @@
                   <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
+                  <a class="nav-link js-scroll-trigger" href="#meus_projetos">Meus Projetos</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#meus_projetos">Meus Projetos</a>
+                  <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
                </li>
             </ul>
          </div>
@@ -137,70 +128,20 @@
                </ul>
             </div>
          </section>
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experiencia">
+         <!-- Seção meus projetos -->
+         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="meus_projetos">
             <div class="my-auto">
-               <h2 class="mb-5">Experiência</h2>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Analista de Business Intelligence</h3>
-                     <div class="subheading mb-3">Agrex do Brasil</div>
-                     <p>Obtive o desafio de implantar a ferramenta Microsoft Power BI na companhia (gerando um resultado de ganho de produtividade para vários colaboradores que necessitavam da informação o quanto antes, além de extinguir alguns processos manuais), sendo 14 projetos até o momento e cerca de 150 pessoas utilizando diariamente. Fiz toda a integração do zero com Salesforce, APIs, Sharepoint, Power Apps, além de ajudar no desenvolvimento do ambiente embedded.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Fevereiro 2023 - Hoje</span>
-                  </div>
+               <h2 class="mb-5">Meus Projetos</h2>
+               <h3 class="mb-3">Gestão de Projetos</h3>
+               <p>Com o intuito de organizar minhas atividades pessoais de estudo, criei este dashboard em Power BI com as fases, projeto, descrição de atividades, prazos e status. Dessa forma, posso saber o que está pendente, o que já está finalizado e tudo aquilo que ainda não iniciei.</p>
+               <div class="iframe-container">
+                  <iframe title="GESTAO_DE_PROJETOS" src="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
                </div>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Analista de Dados</h3>
-                     <div class="subheading mb-3">Cerrado Pneus</div>
-                     <p>Construção de dashboards no Power BI do zero e de acordo com a necessidade do setor, criação de banco de dados relacional e estruturação de modelos, realizar queries no SAP S/4HANA para buscar as informações direto do ERP segundo o mapeamento das transações e suas chaves, utilizando a melhor performance para não sobrecarregar o banco.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Maio 2022 - Janeiro 2023</span>
-                  </div>
-               </div>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Pesquisador em Ciência de Dados</h3>
-                     <div class="subheading mb-3">Rede Data Science BR</div>
-                     <p>Participação no desenvolvimento de ponta a ponta dos dashboards em Power BI solicitados pelo MEC (Ministério da Educação) como Plataforma Nilo Peçanha, Painel Coronavirus, Universidade 360, assim como participação nas tecnologias para infraestrutura, técnicas de visualização e métodos para realizar os cálculos dos indicadores.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Outubro 2020 - Dezembro 2022</span>
-                  </div>
-               </div>
-               <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Estagiário no setor de Utilidades</h3>
-                     <div class="subheading mb-3">Bunge</div>
-                     <p>
-                        Realizei atividades que vão desde o aprendizado em processos industriais até o suporte administrativo, com a elaboração/manutenção de procedimentos e participação em reuniões. Destaco meu papel na atualização de P&ID, automação de documentos e apresentação de projetos na Convenção da Qualidade. Além disso, destaco a criação do Programa Inovação, liderando a entrega de um dashboard em Power BI, proporcionando uma visão dinâmica das ideias de melhorias que os colaboradores gostariam de compartilhar com a organização.
-                     </p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Agosto 2021 - Maio 2022</span>
-                  </div>
-               </div>
+               <br> <!-- Adiciona uma quebra de linha -->
+               <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
             </div>
          </section>
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-            <div class="my-auto">
-               <h2 class="mb-5">Educação</h2>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Universidade Federal do Oeste da Bahia (UFOB)</h3>
-                     <div class="subheading mb-3">Bacharel em Engenharia de Produção</div>
-                     <!-- <p>Trabalho Final: 9.5</p> /* Retirei a nota */
-                        <p>Média de Conclusão: 7.6</p> -->
-                     <a href="https://pergamum.ufob.edu.br/pergamumweb/downloadArquivo?vinculo=QjMyNUJCNFkyOWtSVzF3Y21WellUMDFOak1tWVdObGNuWnZQVEkzTlRJME55WnpaWEZRWVhKaFozSmhabTg5TVNaelpYRlRaV05oYnowNEptdGhjbVJsZUQxT0pteHZZMkZzUVhKeGRXbDJiejFEVDAxUVFWSlVTVXhJUVUxRlRsUlBKbTV2YldWRFlXMXBibWh2UFRBd01EQXhZeTh3TURBd01XTXpaUzV3WkdZPUFCMEIxNEQ=&nomeExtensao=.pdf" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o trabalho final</a>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Junho 2016 - Agosto 2023</span>
-                  </div>
-               </div>
-            </div>
-         </section>
+         <!-- Seção habilidades -->
          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             <div class="my-auto">
                <h2 class="mb-5">Habilidades</h2>
@@ -208,7 +149,7 @@
                <ul class="list-inline list-icons">
                   <li class="list-inline-item">
                      <div class="icon-container">
-                      <img src="img/pbi.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
+                        <img src="img/pbi.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
                         <p>POWER BI</p>
                      </div>
                   </li>
@@ -219,11 +160,11 @@
                      </div>
                   </li>
                   <li class="list-inline-item">
-                    <div class="icon-container">
+                     <div class="icon-container">
                         <img src="img/tabular_editor.png" alt="HTML5 Icon" class="png change-color" width="44" height="44">
                         <p>TABULAR EDITOR</p>
-                    </div>
-                </li>
+                     </div>
+                  </li>
                   <li class="list-inline-item">
                      <div class="icon-container">
                         <img src="img/postgres.png" alt="HTML5 Icon" class="png" width="44" height="44">
@@ -232,13 +173,13 @@
                   </li>
                   <li class="list-inline-item">
                      <div class="icon-container">
-                      <img src="img/mysql.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                        <img src="img/mysql.png" alt="HTML5 Icon" class="png" width="44" height="44">
                         <p>MYSQL</p>
                      </div>
                   </li>
                   <li class="list-inline-item">
                      <div class="icon-container">
-                      <img src="img/pdi.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                        <img src="img/pdi.png" alt="HTML5 Icon" class="png" width="44" height="44">
                         <p>PENTAHO</p>
                      </div>
                   </li>
@@ -271,7 +212,7 @@
                   </li>
                   <li class="list-inline-item">
                      <div class="icon-container">
-                      <img src="img/sql.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                        <img src="img/sql.png" alt="HTML5 Icon" class="png" width="44" height="44">
                         <p>SQL</p>
                      </div>
                   </li>
@@ -307,7 +248,7 @@
                   </li>
                   <li class="list-inline-item">
                      <div class="icon-container">
-                      <img src="img/corel.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
+                        <img src="img/corel.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
                         <p>COREL DRAW</p>
                      </div>
                   </li>
@@ -357,18 +298,67 @@
                </ul>
             </div>
          </section>
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="meus_projetos">
-          <div class="my-auto">
-             <h2 class="mb-5">Meus Projetos</h2>
-             <h3 class="mb-3">Gestão de Projetos</h3>
-             <p>Com o intuito de organizar minhas atividades pessoais de estudo, criei este dashboard em Power BI com as fases, projeto, descrição de atividades, prazos e status. Dessa forma, posso saber o que está pendente, o que já está finalizado e tudo aquilo que ainda não iniciei.</p>
-             <div class="iframe-container">
-                <iframe title="GESTAO_DE_PROJETOS" src="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
-             </div>
-             <br> <!-- Adiciona uma quebra de linha -->
-             <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
-          </div>
-       </section>
+         <!-- Seção Educação -->
+         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+            <div class="my-auto">
+               <h2 class="mb-5">Educação</h2>
+               <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                     <h3 class="mb-0">Universidade Federal do Oeste da Bahia (UFOB)</h3>
+                     <div class="subheading mb-3">Bacharel em Engenharia de Produção</div>
+                     <!-- <p>Trabalho Final: 9.5</p> /* Retirei a nota */
+                        <p>Média de Conclusão: 7.6</p> -->
+                     <a href="https://pergamum.ufob.edu.br/pergamumweb/downloadArquivo?vinculo=QjMyNUJCNFkyOWtSVzF3Y21WellUMDFOak1tWVdObGNuWnZQVEkzTlRJME55WnpaWEZRWVhKaFozSmhabTg5TVNaelpYRlRaV05oYnowNEptdGhjbVJsZUQxT0pteHZZMkZzUVhKeGRXbDJiejFEVDAxUVFWSlVTVXhJUVUxRlRsUlBKbTV2YldWRFlXMXBibWh2UFRBd01EQXhZeTh3TURBd01XTXpaUzV3WkdZPUFCMEIxNEQ=&nomeExtensao=.pdf" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o trabalho final</a>
+                  </div>
+                  <div class="resume-date text-md-right">
+                     <span class="text-primary">Junho 2016 - Agosto 2023</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Seção Experiência -->
+         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experiencia">
+            <div class="my-auto">
+               <h2 class="mb-5">Experiência</h2>
+               <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                     <h3 class="mb-0">Analista de Business Intelligence</h3>
+                     <div class="subheading mb-3">Agrex do Brasil</div>
+                  </div>
+                  <div class="resume-date text-md-right">
+                     <span class="text-primary">Fevereiro 2023 - Hoje</span>
+                  </div>
+               </div>
+               <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                     <h3 class="mb-0">Analista de Dados</h3>
+                     <div class="subheading mb-3">Cerrado Pneus</div>
+                  </div>
+                  <div class="resume-date text-md-right">
+                     <span class="text-primary">Maio 2022 - Janeiro 2023</span>
+                  </div>
+               </div>
+               <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                     <h3 class="mb-0">Pesquisador em Ciência de Dados</h3>
+                     <div class="subheading mb-3">Rede Data Science BR</div>
+                  </div>
+                  <div class="resume-date text-md-right">
+                     <span class="text-primary">Outubro 2020 - Dezembro 2022</span>
+                  </div>
+               </div>
+               <div class="resume-item d-flex flex-column flex-md-row">
+                  <div class="resume-content mr-auto">
+                     <h3 class="mb-0">Estagiário no setor de Utilidades</h3>
+                     <div class="subheading mb-3">Bunge</div>
+                     </p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                     <span class="text-primary">Agosto 2021 - Maio 2022</span>
+                  </div>
+               </div>
+            </div>
+         </section>
          <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
               <h2 class="mb-5">Awards &amp; Certifications</h2>
