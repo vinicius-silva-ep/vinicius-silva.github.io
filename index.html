@@ -1,220 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>Portfólio - Vinícius</title>
-      <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom fonts for this template -->
-      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-      <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="css/resume.min.css" rel="stylesheet">
-      <style>
-         /* Esse bloco de código serve para identificar a cor do botão para a parte do TCC */
-         .btn-custom {
-         background-color: #ba5e3b;
-         color: #fff; /* Define a cor do texto para branco */
-         }
-         .icon-container {
-         text-align: center;
-         }
-         .icon-container img {
-         margin-bottom: 1px; /* Espaçamento entre o ícone e o texto */
-         }
-         .list-inline .icon-container p {
-         font-size: 14px; /* Ajuste do tamanho da fonte conforme necessário */
-         font-family: 'Saira Extra Condensed', sans-serif; /* Usar a fonte 'Saira Extra Condensed' */
-         /* font-weight: bold; */
-         letter-spacing: 0.3px;
-         }
-         .icon-container {
-         transition: color 0.3s ease; /* Adiciona transição para a propriedade color */
-         }
-         .icon-container:hover {
-         color: #ba5e3b; /* Cor ao passar o mouse */
-         }
-         .icon-container img {
-         filter: grayscale(100%);
-         transition: filter 0.3s ease; /* Adiciona transição para a propriedade filter */
-         }
-         .icon-container img:hover {
-         filter: none; /* Retorna a imagem do jeito original */
-         }
-         .iframe-container {
-         position: relative;
-         overflow: hidden;
-         width: 100%;
-         padding-top: 56.25%; /* Proporção de 16:9 para o iframe */
-         }
-         .iframe-container iframe {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         border: 0;
-         }
-         .titulo-artigo {
-        font-weight: normal; /* Isso remove o negrito */
-    }
 
-    .bandeira-brasil, .bandeira-estados-unidos {
-    position: absolute;
-    bottom: 5px; 
-    width: 30px; 
-    height: auto;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Portfólio - Vinícius</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+        /* Esse bloco de código serve para identificar a cor do botão para a parte do TCC */
+        
+        .btn-custom {
+            background-color: #ba5e3b;
+            color: #fff;
+            /* Define a cor do texto para branco */
+        }
+        
+        .icon-container {
+            text-align: center;
+        }
+        
+        .icon-container img {
+            margin-bottom: 1px;
+            /* Espaçamento entre o ícone e o texto */
+        }
+        
+        .list-inline .icon-container p {
+            font-size: 14px;
+            /* Ajuste do tamanho da fonte conforme necessário */
+            font-family: 'Saira Extra Condensed', sans-serif;
+            /* Usar a fonte 'Saira Extra Condensed' */
+            /* font-weight: bold; */
+            letter-spacing: 0.3px;
+        }
+        
+        .icon-container {
+            transition: color 0.3s ease;
+            /* Adiciona transição para a propriedade color */
+        }
+        
+        .icon-container:hover {
+            color: #ba5e3b;
+            /* Cor ao passar o mouse */
+        }
+        
+        .icon-container img {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+            /* Adiciona transição para a propriedade filter */
+        }
+        
+        .icon-container img:hover {
+            filter: none;
+            /* Retorna a imagem do jeito original */
+        }
+        
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+            /* Proporção de 16:9 para o iframe */
+        }
+        
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .titulo-artigo {
+            font-weight: normal;
+            /* Isso remove o negrito */
+        }
+        
+        .bandeira-brasil,
+        .bandeira-estados-unidos {
+            position: absolute;
+            bottom: 5px;
+            width: 30px;
+            height: auto;
+        }
+        
+        .bandeira-brasil {
+            left: calc(50% - 35px);
+        }
+        
+        .bandeira-estados-unidos {
+            left: calc(50% + 5px);
+        }
+        
+        .sobre-mim {
+            font-size: auto
+        }
+    </style>
+</head>
 
-.bandeira-brasil {
-    left: calc(50% - 35px); 
-}
-
-.bandeira-estados-unidos {
-    left: calc(50% + 5px); 
-}
-
-      </style>
-   </head>
-   <body id="page-top">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-         <span class="d-block d-lg-none">Portfólio de Projetos</span>
-         <span class="d-none d-lg-block">
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Portfólio de Projetos</span>
+            <span class="d-none d-lg-block">
          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/imagem_vinicius.jpg" alt="">
          </span>
-         </a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
          </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#meus_projetos">Meus Projetos</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#participei_projetos">Projetos que participei</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#artigos">Artigos</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
-                  </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#meus_projetos">Meus Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#participei_projetos">Projetos que participei</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#artigos">Artigos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
+                </li>
             </ul>
             <a href="#" id="br-flag">
-               <img src="img/pt-br.png" class="bandeira-brasil" alt="Bandeira do Brasil">
-           </a>
-           <a href="#" id="us-flag">
-               <img src="img/en-us.png" class="bandeira-estados-unidos" alt="Bandeira dos Estados Unidos">
-           </a>
-         </div>
-      </nav>
-      <div class="container-fluid p-0">
-         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+                <img src="img/pt-br.png" class="bandeira-brasil" alt="Bandeira do Brasil">
+            </a>
+            <a href="#" id="us-flag">
+                <img src="img/en-us.png" class="bandeira-estados-unidos" alt="Bandeira dos Estados Unidos">
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div class="my-auto">
-               <h1 class="mb-0">Vinícius
-                  <span class="text-primary">Silva</span>
-               </h1>
-               <div class="subheading mb-5">Luís Eduardo Magalhães · Bahia, Brasil ·
-                  <a href="mailto:name@email.com">vinicius.silva.ep@outlook.com</a>
-               </div>
-               <p class="mb-5">Olá! Eu sou Vinícius, engenheiro de produção, graduado pela Universidade Federal do Oeste da Bahia. Desde 2020, venho trilhando meu caminho no mundo dos dados. Minha jornada envolve a combinação entre minha formação sólida em engenharia de produção e minha paixão enraizada por tecnologia.
-                  Ao longo dos anos, concentrei meus esforços na área de Data Science, explorando diversas vertentes, desde a análise de dados até o universo do Business Intelligence. Meu foco principal reside na Engenharia de Dados.
-                  Quando não estou imerso nos desafios dos dados, sou um músico instrumentista nas horas vagas. Acredito que a combinação da lógica da engenharia com a criatividade da música é a chave para uma abordagem única e inovadora.
-                  Meu objetivo é continuar aprimorando minhas habilidades, explorando novas fronteiras da ciência de dados e contribuindo para soluções inteligentes e impactantes. Esse é o meu mundo, onde a paixão pela tecnologia e a busca incessante por conhecimento moldam minha jornada profissional e pessoal.
-               </p>
-               <ul class="list-inline list-social-icons mb-0">
-                  <li class="list-inline-item">
-                     <a href="https://www.linkedin.com/in/vinicius-silva-ep/" target="_blank">
-                     <span class="fa-stack fa-lg">
+                <h1 class="mb-0">Vinícius
+                    <span class="text-primary">Silva</span>
+                </h1>
+                <div class="subheading mb-5">Luís Eduardo Magalhães · Bahia, Brasil ·
+                    <a href="mailto:name@email.com">vinicius.silva.ep@outlook.com</a>
+                </div>
+                <div class="sobre-mim">
+                    <p class="mb-5">Olá! Eu sou Vinícius, engenheiro de produção, graduado pela Universidade Federal do Oeste da Bahia. Desde 2020, venho trilhando meu caminho no mundo dos dados. Minha jornada envolve a combinação entre minha formação sólida em engenharia
+                        de produção e minha paixão enraizada por tecnologia. Ao longo dos anos, concentrei meus esforços na área de Data Science, explorando diversas vertentes, desde a análise de dados até o universo do Business Intelligence. Meu foco
+                        principal reside na Engenharia de Dados. Quando não estou imerso nos desafios dos dados, sou um músico instrumentista nas horas vagas. Acredito que a combinação da lógica da engenharia com a criatividade da música é a chave para
+                        uma abordagem única e inovadora. Meu objetivo é continuar aprimorando minhas habilidades, explorando novas fronteiras da ciência de dados e contribuindo para soluções inteligentes e impactantes. Esse é o meu mundo, onde a paixão
+                        pela tecnologia e a busca incessante por conhecimento moldam minha jornada profissional e pessoal.
+                    </p>
+                </div>
+                <ul class="list-inline list-social-icons mb-0">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/vinicius-silva-ep/" target="_blank">
+                            <span class="fa-stack fa-lg">
                      <i class="fa fa-circle fa-stack-2x"></i>
                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                      </span>
-                     </a>
-                  </li>
-                  <li class="list-inline-item">
-                     <a href="https://github.com/vinicius-silva-ep" target="_blank">
-                     <span class="fa-stack fa-lg">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/vinicius-silva-ep" target="_blank">
+                            <span class="fa-stack fa-lg">
                      <i class="fa fa-circle fa-stack-2x"></i>
                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                      </span>
-                     </a>
-                  </li>
-               </ul>
+                        </a>
+                    </li>
+                </ul>
             </div>
-         </section>
+        </section>
 
-         <!-- Seção meus projetos -->
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="meus_projetos">
+        <!-- Seção meus projetos -->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="meus_projetos">
             <div class="my-auto">
-               <h2 class="mb-5">Meus Projetos</h2>
-               <h3 class="mb-3">Gestão de Projetos</h3>
-               <p>Com o intuito de organizar minhas atividades pessoais de estudo, criei este dashboard em Power BI com as fases, projeto, descrição de atividades, prazos e status. Dessa forma, posso saber o que está pendente, o que já está finalizado e tudo aquilo que ainda não iniciei.</p>
-               <div class="iframe-container">
-                  <iframe title="GESTAO_DE_PROJETOS" src="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
-               </div>
-               <br> <!-- Adiciona uma quebra de linha -->
-               <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
+                <h2 class="mb-5">Meus Projetos</h2>
+                <h3 class="mb-3">Gestão de Projetos</h3>
+                <p>Com o intuito de organizar minhas atividades pessoais de estudo, criei este dashboard em Power BI com as fases, projeto, descrição de atividades, prazos e status. Dessa forma, posso saber o que está pendente, o que já está finalizado e
+                    tudo aquilo que ainda não iniciei.</p>
+                <div class="iframe-container">
+                    <iframe title="GESTAO_DE_PROJETOS" src="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <br>
+                <!-- Adiciona uma quebra de linha -->
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
             </div>
-         </section>
-         
-         <!-- Seção projetos que participei -->
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
+        </section>
+
+        <!-- Seção projetos que participei -->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
             <div class="my-auto">
-               <h5 class="mb-3 text-muted">(Todos os dados são públicos, inclusive os dashboards)</h5>
+                <h5 class="mb-3 text-muted">(Todos os dados são públicos, inclusive os dashboards)</h5>
                 <h2 class="mb-5">Projetos que participei</h2>
                 <h3 class="mb-3">PLATAFORMA NILO PEÇANHA</h3>
                 <div class="iframe-container">
                     <iframe title="PNP" src="https://app.powerbi.com/view?r=eyJrIjoiZDhkNGNiYzgtMjQ0My00OGVlLWJjNzYtZWQwYjI2OThhYWM1IiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
-                <br> <!-- Adiciona uma quebra de linha -->
+                <br>
+                <!-- Adiciona uma quebra de linha -->
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDhkNGNiYzgtMjQ0My00OGVlLWJjNzYtZWQwYjI2OThhYWM1IiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
             </div>
         </section>
 
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
             <div class="my-auto">
                 <h3 class="mb-3">UNIVERSIDADE 360</h3>
                 <div class="iframe-container">
                     <iframe title="UNIVERSIDADE_360" src="https://app.powerbi.com/view?r=eyJrIjoiMjBhODAyMTItNjIzMi00ZWI3LThhNjMtMjRiZjI1OGFlM2U1IiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
-                <br> <!-- Adiciona uma quebra de linha -->
+                <br>
+                <!-- Adiciona uma quebra de linha -->
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMjBhODAyMTItNjIzMi00ZWI3LThhNjMtMjRiZjI1OGFlM2U1IiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
             </div>
         </section>
-        
+
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
             <div class="my-auto">
                 <h3 class="mb-3">CORONAVÍRUS MONITORAMENTO DA REDE FEDERAL DE EDUCAÇÃO</h3>
                 <div class="iframe-container">
                     <iframe title="CORONAVIRUS_MEC" src="https://app.powerbi.com/view?r=eyJrIjoiYzIxYTYxOTUtZGM3OC00MWQ4LThiZTgtZDE5YTUzN2UwMTRlIiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
-                <br> <!-- Adiciona uma quebra de linha -->
+                <br>
+                <!-- Adiciona uma quebra de linha -->
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiYzIxYTYxOTUtZGM3OC00MWQ4LThiZTgtZDE5YTUzN2UwMTRlIiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o painel em tela inteira</a>
             </div>
         </section>
-                
-         <!-- Seção meus artigos -->
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="artigos">
+
+        <!-- Seção meus artigos -->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="artigos">
             <div class="my-auto">
                 <h2 class="mb-5">Artigos</h2>
-        
+
                 <div class="d-flex flex-wrap mb-5">
                     <!-- Artigo 1 -->
                     <img src="img/artigo_1.png" alt="Descrição da imagem" class="mr-3" style="height: 150px; width: auto; border-radius: 10px;">
@@ -223,7 +258,7 @@
                         <a href="https://www.linkedin.com/pulse/inserindo-dados-de-um-arquivo-csv-para-uma-tabela-em-banco-silva-mv34f/?trackingId=xpVY9YdGTzS%2FeHDJaHNDyQ%3D%3D" class="btn btn-custom btn-sm" target="_blank">Ver artigo</a>
                     </div>
                 </div>
-        
+
                 <div class="d-flex flex-wrap">
                     <!-- Artigo 2 -->
                     <img src="img/artigo_2.jpg" alt="Descrição da imagem" class="mr-3" style="height: 150px; width: auto; border-radius: 10px;">
@@ -234,233 +269,227 @@
                 </div>
             </div>
         </section>
-        
-        
-         <!-- Seção habilidades -->
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+
+
+        <!-- Seção habilidades -->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             <div class="my-auto">
-               <h2 class="mb-5">Habilidades</h2>
-               <div class="subheading mb-3">Ferramentas para data science</div>
-               <ul class="list-inline list-icons">
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/pbi.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
-                        <p>POWER BI</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/teste.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>DAX STUDIO</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/tabular_editor.png" alt="HTML5 Icon" class="png change-color" width="44" height="44">
-                        <p>TABULAR EDITOR</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/postgres.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>POSTGRESQL</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/mysql.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>MYSQL</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/pdi.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>PENTAHO</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/HOP.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>APACHE HOP</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/docker.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>DOCKER</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/git.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>GIT</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/api.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>APIs</p>
-                     </div>
-                  </li>
-               </ul>
-               <div class="subheading mb-3">linguagens de programação</div>
-               <ul class="list-inline list-icons">
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/python.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>PYTHON</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/sql.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>SQL</p>
-                     </div>
-                  </li>
-               </ul>
-               <div class="subheading mb-3">sistemas operacionais</div>
-               <ul class="list-inline list-icons">
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/ubuntu.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>UBUNTU SERVER</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/linux.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>LINUX</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/windows.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>WINDOWS</p>
-                     </div>
-                  </li>
-               </ul>
-               <div class="subheading mb-3">ux design</div>
-               <ul class="list-inline list-icons">
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/figma.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>FIGMA</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/corel.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
-                        <p>COREL DRAW</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/ai.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>ILLUSTRATOR</p>
-                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                     <div class="icon-container">
-                        <img src="img/ps.png" alt="HTML5 Icon" class="png" width="44" height="44">
-                        <p>PHOTOSHOP</p>
-                     </div>
-                  </li>
-               </ul>
-               <div class="subheading mb-3">Competências</div>
-               <ul class="fa-ul mb-0">
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     Proficiente em análise exploratória de dados, manipulação de dados, limpeza e transformação usando ferramentas como Power Query (linguagem M), Python, Pandas e SQL;
-                  </li>
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     Criação e administração de bancos de dados, abrangendo modelagem, implementação e otimização. Experiência em design de esquemas e normalização;
-                  </li>
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     ETL e Pipelines de Dados com Python;
-                  </li>
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     Automatização de processos e webscrapping utilizando Python;
-                  </li>
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     Versionamento utilizando Git/GitHub;
-                  </li>
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     Utilização de VPS, conhecimento de APIs e microgerenciamento de serviços utilizando Docker;
-                  </li>
-                  <li>
-                     <i class="fa-li fa fa-check"></i>
-                     UX e Storytelling.
-                  </li>
-               </ul>
+                <h2 class="mb-5">Habilidades</h2>
+                <div class="subheading mb-3">Ferramentas para data science</div>
+                <ul class="list-inline list-icons">
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/pbi.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
+                            <p>POWER BI</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/teste.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>DAX STUDIO</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/tabular_editor.png" alt="HTML5 Icon" class="png change-color" width="44" height="44">
+                            <p>TABULAR EDITOR</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/postgres.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>POSTGRESQL</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/mysql.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>MYSQL</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/pdi.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>PENTAHO</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/HOP.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>APACHE HOP</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/docker.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>DOCKER</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/git.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>GIT</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/api.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>APIs</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subheading mb-3">linguagens de programação</div>
+                <ul class="list-inline list-icons">
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/python.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>PYTHON</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/sql.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>SQL</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subheading mb-3">sistemas operacionais</div>
+                <ul class="list-inline list-icons">
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/ubuntu.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>UBUNTU SERVER</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/linux.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>LINUX</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/windows.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>WINDOWS</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subheading mb-3">ux design</div>
+                <ul class="list-inline list-icons">
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/figma.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>FIGMA</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/corel.svg" alt="HTML5 Icon" class="svg-icon" width="44" height="44">
+                            <p>COREL DRAW</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/ai.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>ILLUSTRATOR</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="icon-container">
+                            <img src="img/ps.png" alt="HTML5 Icon" class="png" width="44" height="44">
+                            <p>PHOTOSHOP</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subheading mb-3">Competências</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-check"></i> Proficiente em análise exploratória de dados, manipulação de dados, limpeza e transformação usando ferramentas como Power Query (linguagem M), Python, Pandas e SQL;
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> Criação e administração de bancos de dados, abrangendo modelagem, implementação e otimização. Experiência em design de esquemas e normalização;
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> ETL e Pipelines de Dados com Python;
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> Automatização de processos e webscrapping utilizando Python;
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> Versionamento utilizando Git/GitHub;
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> Utilização de VPS, conhecimento de APIs e microgerenciamento de serviços utilizando Docker;
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> UX e Storytelling.
+                    </li>
+                </ul>
             </div>
-         </section>
-         <!-- Seção Educação -->
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        </section>
+        <!-- Seção Educação -->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
             <div class="my-auto">
-               <h2 class="mb-5">Educação</h2>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Universidade Federal do Oeste da Bahia (UFOB)</h3>
-                     <div class="subheading mb-3">Bacharel em Engenharia de Produção</div>
-                     <!-- <p>Trabalho Final: 9.5</p> /* Retirei a nota */
+                <h2 class="mb-5">Educação</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Universidade Federal do Oeste da Bahia (UFOB)</h3>
+                        <div class="subheading mb-3">Bacharel em Engenharia de Produção</div>
+                        <!-- <p>Trabalho Final: 9.5</p> /* Retirei a nota */
                         <p>Média de Conclusão: 7.6</p> -->
-                     <a href="https://pergamum.ufob.edu.br/pergamumweb/downloadArquivo?vinculo=QjMyNUJCNFkyOWtSVzF3Y21WellUMDFOak1tWVdObGNuWnZQVEkzTlRJME55WnpaWEZRWVhKaFozSmhabTg5TVNaelpYRlRaV05oYnowNEptdGhjbVJsZUQxT0pteHZZMkZzUVhKeGRXbDJiejFEVDAxUVFWSlVTVXhJUVUxRlRsUlBKbTV2YldWRFlXMXBibWh2UFRBd01EQXhZeTh3TURBd01XTXpaUzV3WkdZPUFCMEIxNEQ=&nomeExtensao=.pdf" class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o trabalho final</a>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Junho 2016 - Agosto 2023</span>
-                  </div>
-               </div>
+                        <a href="https://pergamum.ufob.edu.br/pergamumweb/downloadArquivo?vinculo=QjMyNUJCNFkyOWtSVzF3Y21WellUMDFOak1tWVdObGNuWnZQVEkzTlRJME55WnpaWEZRWVhKaFozSmhabTg5TVNaelpYRlRaV05oYnowNEptdGhjbVJsZUQxT0pteHZZMkZzUVhKeGRXbDJiejFEVDAxUVFWSlVTVXhJUVUxRlRsUlBKbTV2YldWRFlXMXBibWh2UFRBd01EQXhZeTh3TURBd01XTXpaUzV3WkdZPUFCMEIxNEQ=&nomeExtensao=.pdf"
+                            class="btn btn-custom btn-sm" target="_blank">Clique aqui para visualizar o trabalho final</a>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Junho 2016 - Agosto 2023</span>
+                    </div>
+                </div>
             </div>
-         </section>
-         <!-- Seção Experiência -->
-         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experiencia">
+        </section>
+        <!-- Seção Experiência -->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experiencia">
             <div class="my-auto">
-               <h2 class="mb-5">Experiência</h2>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Analista de Business Intelligence</h3>
-                     <div class="subheading mb-3">Agrex do Brasil</div>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Fevereiro 2023 - Hoje</span>
-                  </div>
-               </div>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Analista de Dados</h3>
-                     <div class="subheading mb-3">Cerrado Pneus</div>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Maio 2022 - Janeiro 2023</span>
-                  </div>
-               </div>
-               <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Pesquisador em Ciência de Dados</h3>
-                     <div class="subheading mb-3">Rede Data Science BR</div>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Outubro 2020 - Dezembro 2022</span>
-                  </div>
-               </div>
-               <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                     <h3 class="mb-0">Estagiário no setor de Utilidades</h3>
-                     <div class="subheading mb-3">Bunge</div>
-                     </p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                     <span class="text-primary">Agosto 2021 - Maio 2022</span>
-                  </div>
-               </div>
+                <h2 class="mb-5">Experiência</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Analista de Business Intelligence</h3>
+                        <div class="subheading mb-3">Agrex do Brasil</div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Fevereiro 2023 - Hoje</span>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Analista de Dados</h3>
+                        <div class="subheading mb-3">Cerrado Pneus</div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Maio 2022 - Janeiro 2023</span>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Pesquisador em Ciência de Dados</h3>
+                        <div class="subheading mb-3">Rede Data Science BR</div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Outubro 2020 - Dezembro 2022</span>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Estagiário no setor de Utilidades</h3>
+                        <div class="subheading mb-3">Bunge</div>
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Agosto 2021 - Maio 2022</span>
+                    </div>
+                </div>
             </div>
-         </section>
-         <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        </section>
+        <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
               <h2 class="mb-5">Awards &amp; Certifications</h2>
               <ul class="fa-ul mb-0">
@@ -494,14 +523,17 @@
               </ul>
             </div>
             </section> -->
-      </div>
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- Plugin JavaScript -->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-      <!-- Custom scripts for this template -->
-      <script src="js/resume.min.js"></script>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
-   </body>
+</body>
+
 </html>
