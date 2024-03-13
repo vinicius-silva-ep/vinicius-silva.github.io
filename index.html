@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -64,6 +64,22 @@
          .titulo-artigo {
         font-weight: normal; /* Isso remove o negrito */
     }
+
+    .bandeira-brasil, .bandeira-estados-unidos {
+    position: absolute;
+    bottom: 5px; 
+    width: 30px; 
+    height: auto;
+}
+
+.bandeira-brasil {
+    left: calc(50% - 35px); 
+}
+
+.bandeira-estados-unidos {
+    left: calc(50% + 5px); 
+}
+
       </style>
    </head>
    <body id="page-top">
@@ -99,8 +115,10 @@
                </li>
                <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
-               </li>
+                  </li>
             </ul>
+            <img src="img/pt-br.png" class="bandeira-brasil" alt="Bandeira do Brasil">
+            <img src="img/en-us.png" class="bandeira-estados-unidos" alt="Bandeira dos Estados Unidos">
          </div>
       </nav>
       <div class="container-fluid p-0">
@@ -480,5 +498,6 @@
       <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
       <!-- Custom scripts for this template -->
       <script src="js/resume.min.js"></script>
+
    </body>
 </html>
