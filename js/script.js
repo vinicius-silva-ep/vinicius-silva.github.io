@@ -59,8 +59,9 @@ $(document).ready(function() {
         });
         // Traduz o conteúdo da seção "Meus Projetos"
         $("#meus_projetos h2.mb-5").text('My Projects');
-        $("#meus_projetos h3.mb-3").text('Project Management');
-        $("#meus_projetos p").text('With the aim of organizing my personal study activities, I created this Power BI dashboard with phases, project, activity descriptions, deadlines, and status. This way, I can know what is pending, what is already finished, and everything I have not started yet.');
+        $("#meus_projetos #gestao_de_projetos").text('Project Management');
+        $("#meus_projetos #gestao_de_projetos + p").text('With the aim of organizing my personal study activities, I created this Power BI dashboard with phases, project, activity descriptions, deadlines, and status. This way, I can know what is pending, what is already finished, and everything I have not started yet.');
+
 
     }
 });
