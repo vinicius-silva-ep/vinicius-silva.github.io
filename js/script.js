@@ -1,67 +1,115 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Quando a bandeira do Brasil for clicada
-    $("#br-flag").click(function() {
-        // Recarrega a página para restaurar o estado inicial
-        location.reload();
+    $("#br-flag").click(function () {
+       // Recarrega a página para restaurar o estado inicial
+       location.reload();
     });
-
+ 
     // Quando a bandeira dos Estados Unidos for clicada
-    $("#us-flag").click(function() {
-        // Altera o texto e os elementos para o estado com a bandeira dos Estados Unidos
-        changeToEnglish();
+    $("#us-flag").click(function () {
+       // Altera o texto e os elementos para o estado com a bandeira dos Estados Unidos
+       changeToEnglish();
     });
-
+ 
     // Função para alterar para inglês
     function changeToEnglish() {
-        // Altera o texto dos links da barra de navegação para inglês
-        $(".nav-link").each(function() {
-            switch ($(this).attr('href')) {
-                case '#about':
-                    $(this).text('About');
-                    break;
-                case '#meus_projetos':
-                    $(this).text('My Projects');
-                    break;
-                case '#participei_projetos':
-                    $(this).text("I've participated in");
-                    break;
-                case '#artigos':
-                    $(this).text('Articles');
-                    break;
-                case '#skills':
-                    $(this).text('Skills');
-                    break;
-                case '#education':
-                    $(this).text('Education');
-                    break;
-                case '#experiencia':
-                    $(this).text('Experience');
-                    break;
-            }
-        });
-        $(".sobre-mim p.mb-5").text("Hello! I'm Vinícius, production engineer, graduated from the Federal University of Western Bahia. Since 2020, I've been making my way in the world of data. My journey involves combining my solid background in production engineering and my deep-rooted passion for technology. Over the years, I focused my efforts in the area of Data Science, exploring different aspects, from data analysis to the world of Business Intelligence. My main focus lies in Data Engineering.");
-        // $("#meus_projetos h2.mb-5").text('My Projects');
-        // $("#meus_projetos h3.mb-3").text('Project Management');
-        // $("#meus_projetos p").text('With the aim of organizing my personal study activities, I created this Power BI dashboard with phases, project, activity descriptions, deadlines, and status. This way, I can know what is pending, what is already finished, and everything I have not started yet.');
-        $(".btn-custom").each(function() {
-            // Verifica se o texto do botão é o texto original em inglês
-            if ($(this).text() === 'Ver em tela inteira') {
-                // Se for, traduz para inglês
-                $(this).text('View in full screen');
-            }
-        });
-        $(".text-muted").each(function() {
-            // Verifica se o texto do botão é o texto original em inglês
-            if ($(this).text() === '(Todos os dados são públicos, inclusive os dashboards)') {
-                // Se for, traduz para inglês
-                $(this).text('(All data is public, including dashboards)');
-            }
-        });
-        // Traduz o conteúdo da seção "Meus Projetos"
-        $("#meus_projetos h2.mb-5").text('My Projects');
-        $("#meus_projetos #gestao_de_projetos").text('Project Management');
-        $("#meus_projetos #gestao_de_projetos + p").text('With the aim of organizing my personal study activities, I created this Power BI dashboard with phases, project, activity descriptions, deadlines, and status. This way, I can know what is pending, what is already finished, and everything I have not started yet.');
-
-
+       // Altera o texto dos links da barra de navegação para inglês
+       $(".nav-link").each(function () {
+          switch ($(this).attr('href')) {
+             case '#about':
+                $(this).text('About');
+                break;
+             case '#meus_projetos':
+                $(this).text('My Projects');
+                break;
+             case '#participei_projetos':
+                $(this).text("I've participated in");
+                break;
+             case '#artigos':
+                $(this).text('Articles');
+                break;
+             case '#skills':
+                $(this).text('Skills');
+                break;
+             case '#education':
+                $(this).text('Education');
+                break;
+             case '#experiencia':
+                $(this).text('Experience');
+                break;
+          }
+       });
+       $(".sobre-mim p.mb-5").text("Hello! I'm Vinícius, production engineer, graduated from the Federal University of Western Bahia. Since 2020, I've been making my way in the world of data. My journey involves combining my solid background in production engineering and my deep-rooted passion for technology. Over the years, I focused my efforts in the area of Data Science, exploring different aspects, from data analysis to the world of Business Intelligence. My main focus lies in Data Engineering.");
+ 
+       // Essa parte do código faz as alterações para os botões que aparecem
+       const translations = {
+          'Ver em tela inteira': 'View in full screen',
+          'Ver artigo': 'See article',
+          'Ver o trabalho final': 'See the final paper'
+       };
+       // Itera sobre os botões com a classe .btn-custom
+       $(".btn-custom").each(function () {
+          const originalText = $(this).text();
+          // Verifica se a tradução está definida para o texto do botão
+          if (translations[originalText]) {
+             // Atualiza o texto do botão com a tradução correspondente
+             $(this).text(translations[originalText]);
+          }
+       });
+       $(".text-muted").each(function () {
+          // Verifica se o texto do botão é o texto original em inglês
+          if ($(this).text() === '(Todos os dados são públicos, inclusive os dashboards)') {
+             // Se for, traduz para inglês
+             $(this).text('(All data is public, including dashboards)');
+          }
+       });
+       // Traduz o conteúdo da seção "Meus Projetos"
+       $("#meus_projetos h2.mb-5").text('My Projects');
+       $("#meus_projetos #gestao_de_projetos").text('Project Management');
+       $("#meus_projetos #gestao_de_projetos + p").text('With the aim of organizing my personal study activities, I created this Power BI dashboard with phases, project, activity descriptions, deadlines, and status. This way, I can know what is pending, what is already finished, and everything I have not started yet.');
+       $("#meus_projetos #metricas_de_uso").text('Usage metrics');
+       $("#meus_projetos #metricas_de_uso + p").text('Explored the potential of Power BI REST APIs to create a dynamic dashboard, going beyond the basic metrics available in the Power BI Service, using fictitious data.');
+       // Traduz o conteúdo da seção "Projetos que participei"
+       $("#participei_projetos h2.mb-5").text('Projects I participated in');
+       // Traduz o conteúdo da seção "Artigos"
+       $("#artigos h2.mb-5").text('My articles');
+       $("#artigos #artigo_1").text('Inserting data from a csv file into a table in a remote (cloud) database using Python.');
+       $("#artigos #artigo_2").text('Optimizing the transformation of large volumes of data in Power BI.');
+       // Traduz o conteúdo da seção "Habilidades"
+       $("#skills h2.mb-5").text('Skills');
+       $("#skills #ferramentas_ds").text('Data science tools');
+       $("#skills #linguagens").text('Programming languages');
+       $("#skills #sos").text('Operational Systems');
+       $("#skills #competencias").text('Expertise');
+       // Traduz o conteúdo da subseção "Expertise"
+       $("#competencias + ul li").eq(0).html('<i class="fa-li fa fa-check"></i> Proficient in exploratory data analysis, data manipulation, cleaning, and transformation using tools like Power Query (M language), Python, Pandas, and SQL;');
+       $("#competencias + ul li").eq(1).html('<i class="fa-li fa fa-check"></i> Creation and administration of databases, covering modeling, implementation, and optimization. Experience in schema design and normalization;');
+       $("#competencias + ul li").eq(2).html('<i class="fa-li fa fa-check"></i> ETL and Data Pipelines with Python;');
+       $("#competencias + ul li").eq(3).html('<i class="fa-li fa fa-check"></i> Process automation and web scraping using Python;');
+       $("#competencias + ul li").eq(4).html('<i class="fa-li fa fa-check"></i> Version control using Git/GitHub;');
+       $("#competencias + ul li").eq(5).html('<i class="fa-li fa fa-check"></i> VPS utilization, API knowledge, and microservices management using Docker;');
+       $("#competencias + ul li").eq(6).html('<i class="fa-li fa fa-check"></i> UX and Storytelling.');
+       // Traduz o conteúdo da seção "Educação"
+       $("#education h2.mb-5").text('Education');
+       $("#education #universidade").text('Federal University of Western Bahia (UFOB)');
+       $("#education #bacharel").text('Bachelor in Production Engineering');
+       $("#education #data").text('June 2016 - August 2023');
+       // Tradução da seção "Experiência"
+       $("#experiencia h2.mb-5").text('Experience');
+       $("#experiencia .resume-item").eq(0).find('h3.mb-0').text('Business Intelligence Analyst');
+       $("#experiencia .resume-item").eq(0).find('.subheading.mb-3').text('Agrex do Brasil');
+       $("#experiencia .resume-item").eq(0).find('.text-primary').text('February 2023 - Present');
+ 
+       $("#experiencia .resume-item").eq(1).find('h3.mb-0').text('Data Analyst');
+       $("#experiencia .resume-item").eq(1).find('.subheading.mb-3').text('Cerrado Pneus');
+       $("#experiencia .resume-item").eq(1).find('.text-primary').text('May 2022 - January 2023');
+ 
+       $("#experiencia .resume-item").eq(2).find('h3.mb-0').text('Data Science Researcher');
+       $("#experiencia .resume-item").eq(2).find('.subheading.mb-3').text('Rede Data Science BR');
+       $("#experiencia .resume-item").eq(2).find('.text-primary').text('October 2020 - December 2022');
+ 
+       $("#experiencia .resume-item").eq(3).find('h3.mb-0').text('Utilities Sector Intern');
+       $("#experiencia .resume-item").eq(3).find('.subheading.mb-3').text('Bunge');
+       $("#experiencia .resume-item").eq(3).find('.text-primary').text('August 2021 - May 2022');
     }
-});
+ });
