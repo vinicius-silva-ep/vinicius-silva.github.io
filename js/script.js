@@ -73,8 +73,9 @@ $(document).ready(function () {
        $("#participei_projetos h2.mb-5").text('Projects I participated in');
        // Traduz o conteúdo da seção "Artigos"
        $("#artigos h2.mb-5").text('My articles');
-       $("#artigos #artigo_1").text('Inserting data from a csv file into a table in a remote (cloud) database using Python.');
-       $("#artigos #artigo_2").text('Optimizing the transformation of large volumes of data in Power BI.');
+       $("#artigos #artigo_1").text('Inserting data from a csv file into a table in a remote (cloud) database using Python');
+       $("#artigos #artigo_2").text('Optimizing the transformation of large volumes of data in Power BI');
+       $("#artigos #artigo_3").text('Editing the expression or name of multiple measures using Tabular Editor');
        // Traduz o conteúdo da seção "Habilidades"
        $("#skills h2.mb-5").text('Skills');
        $("#skills #ferramentas_ds").text('Data science tools');
