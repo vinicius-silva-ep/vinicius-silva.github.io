@@ -39,7 +39,7 @@ $(document).ready(function () {
                 break;
           }
        });
-       $(".sobre-mim p.mb-5").text("Hello! I'm Vinícius, production engineer, graduated from the Federal University of Western Bahia. Since 2020, I've been making my way in the world of data. My journey involves combining my solid background in production engineering and my deep-rooted passion for technology. Over the years, I focused my efforts in the area of Data Science, exploring different aspects, from data analysis to the world of Business Intelligence. My main focus lies in Data Engineering.");
+       $(".sobre-mim p.mb-5").text("Hello! I'm Vinícius, a production engineer, graduated from the Federal University of Western Bahia. Since 2020, I've been paving my way in the world of data. My journey involves combining my strong background in production engineering with my deep-rooted passion for technology. Over the years, I've focused my efforts on Data Science, exploring various aspects from data analysis to the realm of Business Intelligence. I've dedicated a significant amount of time to studying to become a Data Scientist.");
  
        // Essa parte do código faz as alterações para os botões que aparecem
        const translations = {
