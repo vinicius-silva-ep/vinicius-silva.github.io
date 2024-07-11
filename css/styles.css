@@ -1,0 +1,138 @@
+/* ESSE É UM ARQUIVO SEPARADO QUE SERVE PARA IMPOR O ESTILO DO CÓDIGO */ 
+
+/* Esse bloco de código serve para identificar a cor do botão para a parte do TCC */
+
+.btn-custom {
+    background-color: #ba5e3b;
+    color: #fff;
+    /* Define a cor do texto para branco */
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon-container img {
+    margin-bottom: 1px;
+    /* Espaçamento entre o ícone e o texto */
+}
+
+.list-inline .icon-container p {
+    font-size: 14px;
+    /* Ajuste do tamanho da fonte conforme necessário */
+    font-family: 'Saira Extra Condensed', sans-serif;
+    /* Usar a fonte 'Saira Extra Condensed' */
+    /* font-weight: bold; */
+    letter-spacing: 0.3px;
+}
+
+.icon-container {
+    transition: color 0.3s ease;
+    /* Adiciona transição para a propriedade color */
+}
+
+.icon-container:hover {
+    color: #ba5e3b;
+    /* Cor ao passar o mouse */
+}
+
+.icon-container img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    /* Adiciona transição para a propriedade filter */
+}
+
+.icon-container img:hover {
+    filter: none;
+    /* Retorna a imagem do jeito original */
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* Proporção de 16:9 para o iframe */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.titulo-artigo {
+    font-weight: normal;
+    /* Isso remove o negrito */
+}
+
+
+.sobre-mim {
+    font-size: auto
+}
+/* DAQUI PRA FRENTE É DA GALERIA */
+
+.gallery {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 400px; /* Define a largura da imagem */
+    height: auto; /* Define a altura da imagem */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.gallery .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.gallery .overlay .text {
+    color: #f1f1f1;
+    font-size: 16px;
+    text-align: center;
+}
+
+.gallery a:hover .overlay {
+    opacity: 1;
+}
+
+.gallery a:hover img {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+h2.mb-5 {
+    margin-bottom: 2rem;
+}
+
+h3.mb-3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: left;
+    margin: 0 0 10px;
+}

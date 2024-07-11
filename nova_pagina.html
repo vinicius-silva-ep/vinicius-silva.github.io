@@ -18,7 +18,6 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
     <style>
-        /* QUANDO EU COMECEI A DESENVOLVER O CÓDIGO, NÃO SABIA QUE PODERIA CRIAR UM ARQUIVO COM O STYLES.CSS */
         /* Esse bloco de código serve para identificar a cor do botão para a parte do TCC */
         
         .btn-custom {
@@ -107,65 +106,70 @@
         .sobre-mim {
             font-size: auto
         }
-        /* DAQUI PRA FRENTE É DA GALERIA */
 
-        .gallery {
-            display: inline-block;
-            position: relative;
-            margin: 10px;
-            width: 400px; /* Define a largura da imagem */
-            height: auto; /* Define a altura da imagem */
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
+ /* DAQUI PRA FRENTE É DA GALERIA */
 
-        .gallery img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: opacity 0.3s;
-        }
+.gallery {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 400px; /* Define a largura da imagem */
+    height: auto; /* Define a altura da imagem */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
 
-        .gallery .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            transition: opacity 0.3s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 8px;
-        }
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
 
-        .gallery .overlay .text {
-            color: #f1f1f1;
-            font-size: 16px;
-            text-align: center;
-        }
+.gallery .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
 
-        .gallery a:hover .overlay {
-            opacity: 1;
-        }
+.gallery .overlay .text {
+    color: #f1f1f1;
+    font-size: 16px;
+    text-align: center;
+}
 
-        .gallery a:hover img {
-            opacity: 0.7;
-            transform: scale(1.05);
-        }
+.gallery a:hover .overlay {
+    opacity: 1;
+}
 
-        h2.mb-5 {
-            margin-bottom: 2rem;
-        }
+.gallery a:hover img {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
 
-        h3.mb-3 {
-            margin-bottom: 1rem;
-        }
-       
+h2.mb-5 {
+    margin-bottom: 2rem;
+}
+
+h3.mb-3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: left;
+    margin: 0 0 10px;
+}
 
 </style>
     </style>
@@ -253,18 +257,15 @@
             </div>
         </section>
 
-
-
     <!-- Seção meus projetos -->
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="meus_projetos">
         <div class="my-auto">
             <h2 class="mb-5">Meus Projetos</h2>
-            <p class="mb-5">Esses são meus projetos originais em que trabalhei usando meu potencial criativo e dados totalmente públicos. Para abrir cada um deles, basta clicar sob qualquer uma das imagens. Uma nova página será aberta contendo os detalhes, espero que goste! 😄
-            </p>
+            
             <!-- Projeto: Gestão de Projetos -->
             <div class="gallery">
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc4NTYwOGUtZDEwOC00NzQwLWE2NWItZWEzNGIzZjE1NDI2IiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" target="_blank">
-                    <img src="img/proj_gestao_de_projetos.jpg" alt="Gestão de Projetos">
+                    <img src="img/teste_projeto02.jpg" alt="Gestão de Projetos">
                     <div class="overlay">
                         <div class="text">Gestão de Projetos</div>
                     </div>
@@ -274,16 +275,15 @@
             <!-- Projeto: Métricas de Uso -->
             <div class="gallery">
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMzk0MWZmMGQtZGI1ZS00OTg1LTkzNzYtMDY3MTFiOTljMmZkIiwidCI6ImI5MzA5NDA0LWExNGQtNGVlZS1hNDEyLTEwNmZlMzA4OWUyMCJ9" target="_blank">
-                    <img src="img/proj_metricas_de_uso.png" alt="Métricas de Uso">
+                    <img src="img/teste_projeto01.png" alt="Métricas de Uso">
                     <div class="overlay">
                         <div class="text">Métricas de Uso</div>
                     </div>
                 </a>
-            </div>                     
+            </div>
+            
         </div>
     </section>
-
-      
 
         <!-- Seção projetos que participei -->
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
@@ -299,7 +299,6 @@
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDhkNGNiYzgtMjQ0My00OGVlLWJjNzYtZWQwYjI2OThhYWM1IiwidCI6IjllNjgyMzU5LWQxMjgtNGVkYi1iYjU4LTgyYjJhMTUzNDBmZiJ9" class="btn btn-custom btn-sm" target="_blank">Ver em tela inteira</a>
             </div>
         </section>
-        
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="participei_projetos">
             <div class="my-auto">
