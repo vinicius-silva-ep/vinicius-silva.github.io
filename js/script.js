@@ -37,6 +37,9 @@ $(document).ready(function () {
              case '#experiencia':
                 $(this).text('Experience');
                 break;
+                case '#certificacoes':
+                  $(this).text('Certifications');
+                  break;                
           }
        });
        $(".sobre-mim p.mb-5").text("Hello! I'm Vinícius, a production engineer, graduated from the Federal University of Western Bahia. Since 2020, I've been paving my way in the world of data. My journey involves combining my strong background in production engineering with my deep-rooted passion for technology. Over the years, I've focused my efforts on Data Science, exploring various aspects from data analysis to the realm of Business Intelligence. I've dedicated a significant amount of time to studying to become a Data Scientist.");
@@ -45,7 +48,8 @@ $(document).ready(function () {
        const translations = {
           'Ver em tela inteira': 'View in full screen',
           'Ver artigo': 'See article',
-          'Ver o trabalho final': 'See the final paper'
+          'Ver o trabalho final': 'See the final paper',
+          'Ver credencial': 'See credential'
        };
        // Itera sobre os botões com a classe .btn-custom
        $(".btn-custom").each(function () {
@@ -65,12 +69,14 @@ $(document).ready(function () {
        });
        // Traduz o conteúdo da seção "Meus Projetos"
        $("#meus_projetos h2.mb-5").text('My Projects');
+       $("#meus_projetos p.mb-5").text('These are my original projects that I worked on using my creative potential and fully public data. To open each one of them, just click on any of the images. A new page will open with the details, I hope you like it! 😄');       
        $("#meus_projetos #gestao_de_projetos").text('Project Management');
        $("#meus_projetos #gestao_de_projetos + p").text('With the aim of organizing my personal study activities, I created this Power BI dashboard with phases, project, activity descriptions, deadlines, and status. This way, I can know what is pending, what is already finished, and everything I have not started yet.');
        $("#meus_projetos #metricas_de_uso").text('Usage metrics');
        $("#meus_projetos #metricas_de_uso + p").text('Explored the potential of Power BI REST APIs to create a dynamic dashboard, going beyond the basic metrics available in the Power BI Service, using fictitious data.');
        // Traduz o conteúdo da seção "Projetos que participei"
        $("#participei_projetos h2.mb-5").text('Projects I participated in');
+       $("#participei_projetos p.mb-5").text('Here is a summary of the projects I participated in as a research scholar in college! The project is called Rede Data Science BR and its main client, to this day, is the Ministry of Education (MEC). I was a student researcher in Data Science and was always collaborating with other researchers throughout Brazil.');       
        // Traduz o conteúdo da seção "Artigos"
        $("#artigos h2.mb-5").text('My articles');
        $("#artigos #artigo_1").text('Inserting data from a csv file into a table in a remote (cloud) database using Python');
@@ -112,5 +118,8 @@ $(document).ready(function () {
        $("#experiencia .resume-item").eq(3).find('h3.mb-0').text('Utilities Sector Intern');
        $("#experiencia .resume-item").eq(3).find('.subheading.mb-3').text('Bunge');
        $("#experiencia .resume-item").eq(3).find('.text-primary').text('August 2021 - May 2022');
+
+       // Tradução da seção "Certificações
+       $("#certificacoes h2.mb-5").text('Certifications');
     }
  });
