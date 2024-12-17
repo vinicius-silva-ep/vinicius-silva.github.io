@@ -41,7 +41,5 @@ O projeto será exibido no navegador.
 Este portfólio tem como objetivo **apresentar minhas habilidades, projetos e experiências** de maneira profissional e organizada.
 
 ---
-=======
-Este projeto é um portfólio pessoal desenvolvido utilizando HTML, Bootstrap, CSS e JavaScript, com base no template do criador e com liberdade para criar itens personalizados.
 
 Dá uma olhada lá: https://vinicius-silva-ep.github.io/
