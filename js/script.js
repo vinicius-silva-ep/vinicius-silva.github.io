@@ -101,23 +101,28 @@ $(document).ready(function () {
        $("#education #universidade").text('Federal University of Western Bahia (UFOB)');
        $("#education #bacharel").text('Bachelor in Production Engineering');
        $("#education #data").text('June 2016 - August 2023');
-       // Tradução da seção "Experiência"
-       $("#experiencia h2.mb-5").text('Experience');
-       $("#experiencia .resume-item").eq(0).find('h3.mb-0').text('Business Intelligence Analyst');
-       $("#experiencia .resume-item").eq(0).find('.subheading.mb-3').text('Agrex do Brasil');
-       $("#experiencia .resume-item").eq(0).find('.text-primary').text('February 2023 - Present');
- 
-       $("#experiencia .resume-item").eq(1).find('h3.mb-0').text('Data Analyst');
-       $("#experiencia .resume-item").eq(1).find('.subheading.mb-3').text('Cerrado Pneus');
-       $("#experiencia .resume-item").eq(1).find('.text-primary').text('May 2022 - January 2023');
- 
-       $("#experiencia .resume-item").eq(2).find('h3.mb-0').text('Data Science Researcher');
-       $("#experiencia .resume-item").eq(2).find('.subheading.mb-3').text('Rede Data Science BR');
-       $("#experiencia .resume-item").eq(2).find('.text-primary').text('October 2020 - December 2022');
- 
-       $("#experiencia .resume-item").eq(3).find('h3.mb-0').text('Utilities Sector Intern');
-       $("#experiencia .resume-item").eq(3).find('.subheading.mb-3').text('Bunge');
-       $("#experiencia .resume-item").eq(3).find('.text-primary').text('August 2021 - May 2022');
+      // Tradução da seção "Experiência"
+      $("#experiencia h2.mb-5").text('Experience');
+
+      $("#experiencia .resume-item").eq(0).find('h3.mb-0').text('Business Intelligence Specialist');
+      $("#experiencia .resume-item").eq(0).find('.subheading.mb-3').text('Agrex do Brasil');
+      $("#experiencia .resume-item").eq(0).find('.text-primary').text('September 2024 - Present');
+
+      $("#experiencia .resume-item").eq(1).find('h3.mb-0').text('Business Intelligence Analyst');
+      $("#experiencia .resume-item").eq(1).find('.subheading.mb-3').text('Agrex do Brasil');
+      $("#experiencia .resume-item").eq(1).find('.text-primary').text('February 2023 - August 2024');
+
+      $("#experiencia .resume-item").eq(2).find('h3.mb-0').text('Data Analyst');
+      $("#experiencia .resume-item").eq(2).find('.subheading.mb-3').text('Cerrado Pneus');
+      $("#experiencia .resume-item").eq(2).find('.text-primary').text('May 2022 - January 2023');
+
+      $("#experiencia .resume-item").eq(3).find('h3.mb-0').text('Data Science Researcher');
+      $("#experiencia .resume-item").eq(3).find('.subheading.mb-3').text('Rede Data Science BR');
+      $("#experiencia .resume-item").eq(3).find('.text-primary').text('October 2020 - December 2022');
+
+      $("#experiencia .resume-item").eq(4).find('h3.mb-0').text('Utilities Sector Intern');
+      $("#experiencia .resume-item").eq(4).find('.subheading.mb-3').text('Bunge');
+      $("#experiencia .resume-item").eq(4).find('.text-primary').text('August 2021 - May 2022');
 
        // Tradução da seção "Certificações
        $("#certificacoes h2.mb-5").text('Certifications');
